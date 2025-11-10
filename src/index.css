@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 345 30% 8%;
+    --foreground: 40 80% 95%;
+
+    --card: 345 25% 12%;
+    --card-foreground: 40 80% 95%;
+
+    --popover: 345 30% 10%;
+    --popover-foreground: 40 80% 95%;
+
+    --primary: 350 70% 45%;
+    --primary-foreground: 40 90% 98%;
+
+    --secondary: 30 60% 55%;
+    --secondary-foreground: 345 30% 10%;
+
+    --muted: 345 20% 25%;
+    --muted-foreground: 40 30% 70%;
+
+    --accent: 30 70% 60%;
+    --accent-foreground: 345 30% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 345 20% 20%;
+    --input: 345 20% 20%;
+    --ring: 350 70% 45%;
+
+    --radius: 0.75rem;
+
+    /* Romantic flower theme colors */
+    --rose-deep: 350 70% 35%;
+    --rose-light: 350 60% 55%;
+    --gold: 30 70% 60%;
+    --cream: 40 80% 95%;
+    --dark-bg: 345 30% 8%;
+    
+    /* Animation values */
+    --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
